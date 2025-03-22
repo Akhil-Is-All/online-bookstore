@@ -66,6 +66,8 @@ import contact_img from './contact_img.png';
 import razorpay_logo from './razorpay_logo.png';
 import stripe_logo from './stripe_logo.png';
 import cross_icon from './cross_icon.png';
+import exchange_icon from './exchange_icon.png'
+import quality_icon from './quality_icon.png'
 
 export const assets = {
     logo,
@@ -84,7 +86,9 @@ export const assets = {
     contact_img,
     razorpay_logo,
     stripe_logo,
-    cross_icon
+    cross_icon,
+    exchange_icon,
+    quality_icon
 }
 
 export const products = [
@@ -97,7 +101,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Classic",
         date: 1716634345448,
-        bestseller: true
+        bestSeller: true
     },
     {
         _id: "aaaab",
@@ -108,7 +112,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Classic",
         date: 1716621345448,
-        bestseller: true
+        bestSeller: true
     },
     {
         _id: "aaaac",
@@ -119,7 +123,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Dystopian",
         date: 1716234545448,
-        bestseller: true
+        bestSeller: true
     },
     {
         _id: "aaaad",
@@ -130,7 +134,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Romance",
         date: 1716621345448,
-        bestseller: true
+        bestSeller: true
     },
     {
         _id: "aaaae",
@@ -141,7 +145,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Coming-of-Age",
         date: 1716622345448,
-        bestseller: true
+        bestSeller: true
     },
     {
         _id: "aaaaf",
@@ -152,7 +156,7 @@ export const products = [
         category: "Fantasy",
         subCategory: "Adventure",
         date: 1716623423448,
-        bestseller: true
+        bestSeller: true
     },
     {
         _id: "aaaag",
@@ -163,7 +167,7 @@ export const products = [
         category: "Fantasy",
         subCategory: "Epic",
         date: 1716621542448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaah",
@@ -174,7 +178,7 @@ export const products = [
         category: "Fantasy",
         subCategory: "Young Adult",
         date: 1716622345448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaai",
@@ -185,7 +189,7 @@ export const products = [
         category: "Mystery",
         subCategory: "Thriller",
         date: 1716621235448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaaj",
@@ -196,7 +200,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Philosophical",
         date: 1716622235448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaak",
@@ -207,7 +211,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Post-Apocalyptic",
         date: 1716623345448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaal",
@@ -218,7 +222,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Historical",
         date: 1716624445448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaam",
@@ -229,7 +233,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Historical",
         date: 1716625545448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaan",
@@ -240,7 +244,7 @@ export const products = [
         category: "Mystery",
         subCategory: "Thriller",
         date: 1716626645448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaao",
@@ -251,7 +255,7 @@ export const products = [
         category: "Horror",
         subCategory: "Psychological",
         date: 1716627745448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaap",
@@ -262,7 +266,7 @@ export const products = [
         category: "Science Fiction",
         subCategory: "Comedy",
         date: 1716628845448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaaq",
@@ -273,7 +277,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Dystopian",
         date: 1716629945448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaar",
@@ -284,7 +288,7 @@ export const products = [
         category: "Science Fiction",
         subCategory: "Survival",
         date: 1716631045448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaas",
@@ -295,7 +299,7 @@ export const products = [
         category: "Fantasy",
         subCategory: "Magical Realism",
         date: 1716632145448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaat",
@@ -306,7 +310,7 @@ export const products = [
         category: "Fantasy",
         subCategory: "Epic",
         date: 1716633245448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaau",
@@ -317,7 +321,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Literary",
         date: 1716634345448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaav",
@@ -328,7 +332,7 @@ export const products = [
         category: "Mystery",
         subCategory: "Thriller",
         date: 1716635445448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaaw",
@@ -339,7 +343,7 @@ export const products = [
         category: "Fiction",
         subCategory: "Historical",
         date: 1716636545448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaax",
@@ -350,7 +354,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Spiritual",
         date: 1716637645448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaay",
@@ -361,7 +365,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Memoir",
         date: 1716638745448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaaz",
@@ -372,7 +376,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "History",
         date: 1716639845448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaaba",
@@ -383,7 +387,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Memoir",
         date: 1716640945448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabb",
@@ -394,7 +398,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716642045448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabc",
@@ -405,7 +409,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716643145448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabd",
@@ -416,7 +420,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Psychology",
         date: 1716644245448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabe",
@@ -427,7 +431,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Psychology",
         date: 1716645345448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabf",
@@ -438,7 +442,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Strategy",
         date: 1716646445448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabg",
@@ -449,7 +453,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Business",
         date: 1716647545448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabh",
@@ -460,7 +464,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Business",
         date: 1716648645448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabi",
@@ -471,7 +475,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Business",
         date: 1716649745448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabj",
@@ -482,7 +486,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716650845448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabk",
@@ -493,7 +497,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716651945448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabl",
@@ -504,7 +508,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Psychology",
         date: 1716653045448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabm",
@@ -515,7 +519,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Relationships",
         date: 1716654145448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabn",
@@ -526,7 +530,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716655245448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabo",
@@ -537,7 +541,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716656345448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabp",
@@ -548,7 +552,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Psychology",
         date: 1716657445448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabq",
@@ -559,7 +563,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716658545448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabr",
@@ -570,7 +574,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Philosophy",
         date: 1716659645448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabs",
@@ -581,7 +585,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716660745448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabt",
@@ -592,7 +596,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716661845448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabu",
@@ -603,7 +607,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Spiritual",
         date: 1716662945448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabv",
@@ -614,7 +618,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Self-Help",
         date: 1716664045448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabw",
@@ -625,7 +629,7 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Finance",
         date: 1716665145448,
-        bestseller: false
+        bestSeller: false
     },
     {
         _id: "aaabx",
@@ -636,6 +640,6 @@ export const products = [
         category: "Non-Fiction",
         subCategory: "Finance",
         date: 1716666245448,
-        bestseller: false
+        bestSeller: false
     }
 ];
