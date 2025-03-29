@@ -187,7 +187,7 @@ export const products = [
         price: 16,
         image: [book9],
         category: "Mystery",
-        subCategory: "Thriller",
+        subCategory: "Hardcover",
         date: 1716621235448,
         bestSeller: false
     },
@@ -242,7 +242,7 @@ export const products = [
         price: 20,
         image: [book14],
         category: "Mystery",
-        subCategory: "Thriller",
+        subCategory: "Hardcover",
         date: 1716626645448,
         bestSeller: false
     },
@@ -330,7 +330,7 @@ export const products = [
         price: 17,
         image: [book22],
         category: "Mystery",
-        subCategory: "Thriller",
+        subCategory: "Hardcover",
         date: 1716635445448,
         bestSeller: false
     },
