@@ -100,6 +100,7 @@ export const products = [
         image: [book1],
         category: "Fiction",
         subCategory: "Classic",
+        sizes:["1","2","3"],
         date: 1716634345448,
         bestSeller: true
     },
@@ -111,6 +112,7 @@ export const products = [
         image: [book2],
         category: "Fiction",
         subCategory: "Classic",
+        sizes:["1","2","3"],
         date: 1716621345448,
         bestSeller: true
     },
@@ -122,6 +124,7 @@ export const products = [
         image: [book3],
         category: "Fiction",
         subCategory: "Dystopian",
+        sizes:["1","2","3"],
         date: 1716234545448,
         bestSeller: true
     },
@@ -133,6 +136,7 @@ export const products = [
         image: [book4],
         category: "Fiction",
         subCategory: "Romance",
+        sizes:["1","2","3"],
         date: 1716621345448,
         bestSeller: true
     },
@@ -144,6 +148,7 @@ export const products = [
         image: [book5],
         category: "Fiction",
         subCategory: "Coming-of-Age",
+        sizes:["1","2","3"],
         date: 1716622345448,
         bestSeller: true
     },
@@ -155,6 +160,7 @@ export const products = [
         image: [book6],
         category: "Fantasy",
         subCategory: "Adventure",
+        sizes:["1","2","3"],
         date: 1716623423448,
         bestSeller: true
     },
@@ -166,6 +172,7 @@ export const products = [
         image: [book7],
         category: "Fantasy",
         subCategory: "Epic",
+        sizes:["1","2","3"],
         date: 1716621542448,
         bestSeller: false
     },
@@ -177,6 +184,7 @@ export const products = [
         image: [book8],
         category: "Fantasy",
         subCategory: "Young Adult",
+        sizes:["1","2","3"],
         date: 1716622345448,
         bestSeller: false
     },
@@ -188,6 +196,7 @@ export const products = [
         image: [book9],
         category: "Mystery",
         subCategory: "Hardcover",
+        sizes:["1","2","3"],
         date: 1716621235448,
         bestSeller: false
     },
@@ -199,6 +208,7 @@ export const products = [
         image: [book10],
         category: "Fiction",
         subCategory: "Philosophical",
+        sizes:["1","2","3"],
         date: 1716622235448,
         bestSeller: false
     },
@@ -210,6 +220,7 @@ export const products = [
         image: [book11],
         category: "Fiction",
         subCategory: "Post-Apocalyptic",
+        sizes:["1","2","3"],
         date: 1716623345448,
         bestSeller: false
     },
@@ -221,6 +232,7 @@ export const products = [
         image: [book12],
         category: "Fiction",
         subCategory: "Historical",
+        sizes:["1","2","3"],
         date: 1716624445448,
         bestSeller: false
     },
@@ -232,6 +244,7 @@ export const products = [
         image: [book13],
         category: "Fiction",
         subCategory: "Historical",
+        sizes:["1","2","3"],
         date: 1716625545448,
         bestSeller: false
     },
@@ -243,6 +256,7 @@ export const products = [
         image: [book14],
         category: "Mystery",
         subCategory: "Hardcover",
+        sizes:["1","2","3"],
         date: 1716626645448,
         bestSeller: false
     },
@@ -254,6 +268,7 @@ export const products = [
         image: [book15],
         category: "Horror",
         subCategory: "Psychological",
+        sizes:["1","2","3"],
         date: 1716627745448,
         bestSeller: false
     },
@@ -265,6 +280,7 @@ export const products = [
         image: [book16],
         category: "Science Fiction",
         subCategory: "Comedy",
+        sizes:["1","2","3"],
         date: 1716628845448,
         bestSeller: false
     },
@@ -276,6 +292,7 @@ export const products = [
         image: [book17],
         category: "Fiction",
         subCategory: "Dystopian",
+        sizes:["1","2","3"],
         date: 1716629945448,
         bestSeller: false
     },
@@ -287,6 +304,7 @@ export const products = [
         image: [book18],
         category: "Science Fiction",
         subCategory: "Survival",
+        sizes:["1","2","3"],
         date: 1716631045448,
         bestSeller: false
     },
@@ -298,6 +316,7 @@ export const products = [
         image: [book19],
         category: "Fantasy",
         subCategory: "Magical Realism",
+        sizes:["1","2","3"],
         date: 1716632145448,
         bestSeller: false
     },
@@ -309,6 +328,7 @@ export const products = [
         image: [book20],
         category: "Fantasy",
         subCategory: "Epic",
+        sizes:["1","2","3"],
         date: 1716633245448,
         bestSeller: false
     },
@@ -320,6 +340,7 @@ export const products = [
         image: [book21],
         category: "Fiction",
         subCategory: "Literary",
+        sizes:["1","2","3"],
         date: 1716634345448,
         bestSeller: false
     },
@@ -331,6 +352,7 @@ export const products = [
         image: [book22],
         category: "Mystery",
         subCategory: "Hardcover",
+        sizes:["1","2","3"],
         date: 1716635445448,
         bestSeller: false
     },
@@ -342,6 +364,7 @@ export const products = [
         image: [book23],
         category: "Fiction",
         subCategory: "Historical",
+        sizes:["1","2","3"],
         date: 1716636545448,
         bestSeller: false
     },
@@ -353,6 +376,7 @@ export const products = [
         image: [book24],
         category: "Non-Fiction",
         subCategory: "Spiritual",
+        sizes:["1","2","3"],
         date: 1716637645448,
         bestSeller: false
     },
@@ -364,6 +388,7 @@ export const products = [
         image: [book25],
         category: "Non-Fiction",
         subCategory: "Memoir",
+        sizes:["1","2","3"],
         date: 1716638745448,
         bestSeller: false
     },
@@ -375,6 +400,7 @@ export const products = [
         image: [book26],
         category: "Non-Fiction",
         subCategory: "History",
+        sizes:["1","2","3"],
         date: 1716639845448,
         bestSeller: false
     },
@@ -386,6 +412,7 @@ export const products = [
         image: [book27],
         category: "Non-Fiction",
         subCategory: "Memoir",
+        sizes:["1","2","3"],
         date: 1716640945448,
         bestSeller: false
     },
@@ -397,6 +424,7 @@ export const products = [
         image: [book28],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716642045448,
         bestSeller: false
     },
@@ -408,6 +436,7 @@ export const products = [
         image: [book29],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716643145448,
         bestSeller: false
     },
@@ -419,6 +448,7 @@ export const products = [
         image: [book30],
         category: "Non-Fiction",
         subCategory: "Psychology",
+        sizes:["1","2","3"],
         date: 1716644245448,
         bestSeller: false
     },
@@ -430,6 +460,7 @@ export const products = [
         image: [book31],
         category: "Non-Fiction",
         subCategory: "Psychology",
+        sizes:["1","2","3"],
         date: 1716645345448,
         bestSeller: false
     },
@@ -441,6 +472,7 @@ export const products = [
         image: [book32],
         category: "Non-Fiction",
         subCategory: "Strategy",
+        sizes:["1","2","3"],
         date: 1716646445448,
         bestSeller: false
     },
@@ -452,6 +484,7 @@ export const products = [
         image: [book33],
         category: "Non-Fiction",
         subCategory: "Business",
+        sizes:["1","2","3"],
         date: 1716647545448,
         bestSeller: false
     },
@@ -463,6 +496,7 @@ export const products = [
         image: [book34],
         category: "Non-Fiction",
         subCategory: "Business",
+        sizes:["1","2","3"],
         date: 1716648645448,
         bestSeller: false
     },
@@ -474,6 +508,7 @@ export const products = [
         image: [book35],
         category: "Non-Fiction",
         subCategory: "Business",
+        sizes:["1","2","3"],
         date: 1716649745448,
         bestSeller: false
     },
@@ -485,6 +520,7 @@ export const products = [
         image: [book36],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716650845448,
         bestSeller: false
     },
@@ -496,6 +532,7 @@ export const products = [
         image: [book37],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716651945448,
         bestSeller: false
     },
@@ -507,6 +544,7 @@ export const products = [
         image: [book38],
         category: "Non-Fiction",
         subCategory: "Psychology",
+        sizes:["1","2","3"],
         date: 1716653045448,
         bestSeller: false
     },
@@ -518,6 +556,7 @@ export const products = [
         image: [book39],
         category: "Non-Fiction",
         subCategory: "Relationships",
+        sizes:["1","2","3"],
         date: 1716654145448,
         bestSeller: false
     },
@@ -529,6 +568,7 @@ export const products = [
         image: [book40],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716655245448,
         bestSeller: false
     },
@@ -540,6 +580,7 @@ export const products = [
         image: [book41],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716656345448,
         bestSeller: false
     },
@@ -551,6 +592,7 @@ export const products = [
         image: [book42],
         category: "Non-Fiction",
         subCategory: "Psychology",
+        sizes:["1","2","3"],
         date: 1716657445448,
         bestSeller: false
     },
@@ -562,6 +604,7 @@ export const products = [
         image: [book43],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716658545448,
         bestSeller: false
     },
@@ -573,6 +616,7 @@ export const products = [
         image: [book44],
         category: "Non-Fiction",
         subCategory: "Philosophy",
+        sizes:["1","2","3"],
         date: 1716659645448,
         bestSeller: false
     },
@@ -584,6 +628,7 @@ export const products = [
         image: [book45],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716660745448,
         bestSeller: false
     },
@@ -595,6 +640,7 @@ export const products = [
         image: [book46],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716661845448,
         bestSeller: false
     },
@@ -606,6 +652,7 @@ export const products = [
         image: [book47],
         category: "Non-Fiction",
         subCategory: "Spiritual",
+        sizes:["1","2","3"],
         date: 1716662945448,
         bestSeller: false
     },
@@ -617,6 +664,7 @@ export const products = [
         image: [book48],
         category: "Non-Fiction",
         subCategory: "Self-Help",
+        sizes:["1","2","3"],
         date: 1716664045448,
         bestSeller: false
     },
@@ -628,6 +676,7 @@ export const products = [
         image: [book49],
         category: "Non-Fiction",
         subCategory: "Finance",
+        sizes:["1","2","3"],
         date: 1716665145448,
         bestSeller: false
     },
@@ -639,6 +688,7 @@ export const products = [
         image: [book50],
         category: "Non-Fiction",
         subCategory: "Finance",
+        sizes:["1","2","3"],
         date: 1716666245448,
         bestSeller: false
     }
