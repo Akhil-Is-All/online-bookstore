@@ -3,7 +3,7 @@ import { ShopContext } from '../context/ShopContext'
 import ProductItem from './ProductItem';
 import Title from './Title';
 
-const RelatedProducts = ({category,subCategory}) => {
+const Relatedproducts = ({category,subCategory}) => {
     const {products}=useContext(ShopContext);
     const [related,setRelated]=useState([]);
 
@@ -36,4 +36,4 @@ const RelatedProducts = ({category,subCategory}) => {
   )
 }
 
-export default RelatedProducts
+export default Relatedproducts
