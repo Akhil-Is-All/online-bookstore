@@ -7,12 +7,12 @@ const LatestCollection = () => {
 
 
 const {products} = useContext(ShopContext);
-console.log(products);
+// console.log(products);
 const [latestProducts,setLatestProducts] = useState([])
 
 useEffect(()=>{
   setLatestProducts(products.slice(0,10));
-},[])
+},[products])
   return (
     <div className='my-10'>
       <div className="text-center py-8 text-3xl">

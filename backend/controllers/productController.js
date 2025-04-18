@@ -1,7 +1,7 @@
 import {v2 as cloudinary} from 'cloudinary'
 import { json } from 'express'
 import productModel from '../models/productModel.js'
-
+// import cloudinary from '../config/cloudinary.js'
 
 // function for adding products 
 
@@ -18,7 +18,7 @@ const addProduct= async (req,res)=>{
         const images = [image1,image2,image3,image4].filter((item)=>item!==undefined)
 
         const imagesUrl=await Promise.all(
-            images.map(async ()=>{
+            images.map(async (item)=>{
                 let result =await cloudinary.uploader.upload(item.path,{resource_type:'image'})
                 return result.secure_url
             })
@@ -29,7 +29,7 @@ const addProduct= async (req,res)=>{
             description,
             category,
             price:Number(price),
-            subCategory,
+            // subCategory,
             bestSeller:bestSeller==='true'?true:false,
             sizes:JSON.parse(sizes),
             image: imagesUrl,
@@ -83,6 +83,8 @@ const singleProduct= async (req,res)=>{
         const product = await productModel.findById(productId)
         res.json({success:true,product})
     } catch (error) {
+        console.log(error)
+        res.json({success:false,message:error.message})
         
     }
 }

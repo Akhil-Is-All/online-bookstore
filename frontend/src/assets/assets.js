@@ -48,6 +48,7 @@ import book47 from './book47.png';
 import book48 from './book48.png';
 import book49 from './book49.png';
 import book50 from './book50.png';
+import pic from './pic.png'
 
 import logo from './logo.png';
 import hero from './hero.png'
@@ -88,7 +89,8 @@ export const assets = {
     stripe_logo,
     cross_icon,
     exchange_icon,
-    quality_icon
+    quality_icon,
+    pic
 }
 
 export const products = [
