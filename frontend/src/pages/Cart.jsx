@@ -34,11 +34,14 @@ const Cart = () => {
       </div>
 
       <div>
-        {cartData.map((item, index) => {
+        {
+        cartData.map((item, index) => {
           const productData = products.find(
             (product) => product._id === item._id
           );
 
+          // console.log(productData);
+          
           return (
             <div
               key={index}
