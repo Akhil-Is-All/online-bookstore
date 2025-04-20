@@ -3,6 +3,7 @@ import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 import { assets } from "../assets/assets";
 import CardTotal from "../components/CardTotal";
+
 const Cart = () => {
   const { products, currency, cartItems, updateQuantity, navigate } =
     useContext(ShopContext);
@@ -12,13 +13,14 @@ const Cart = () => {
   useEffect(() => {
     if (products.length > 0) {
       const tempData = [];
-      for (const items in cartItems) {
-        for (const item in cartItems[items]) {
-          if (cartItems[items][item] > 0) {
+      for (const productId in cartItems) {
+        for (const size in cartItems[productId]) {
+          const quantity = cartItems[productId][size];
+          if (quantity > 0) {
             tempData.push({
-              _id: items,
-              size: item,
-              quantity: cartItems[items][item],
+              _id: productId,
+              size: size,
+              quantity: quantity,
             });
           }
         }
@@ -28,20 +30,20 @@ const Cart = () => {
   }, [cartItems, products]);
 
   return (
-    <div className="border-t pt-14 ">
+    <div className="border-t pt-14">
       <div className="text-2xl mb-3">
         <Title text1={"YOUR"} text2={"CART"} />
       </div>
 
       <div>
-        {
-        cartData.map((item, index) => {
+        {cartData.map((item, index) => {
           const productData = products.find(
             (product) => product._id === item._id
           );
 
-          // console.log(productData);
-          
+          // If productData is not found, skip rendering this item
+          if (!productData) return null;
+
           return (
             <div
               key={index}
@@ -50,8 +52,8 @@ const Cart = () => {
               <div className="flex items-start gap-6">
                 <img
                   className="w-16 sm:w-20"
-                  src={productData.image[0]}
-                  alt=""
+                  src={productData.image?.[0] || assets.placeholder_image}
+                  alt={productData.name || "Product"}
                 />
                 <div>
                   <p className="text-xs sm:text-lg font-medium">
@@ -67,26 +69,25 @@ const Cart = () => {
                   </div>
                 </div>
               </div>
+
               <input
-                onChange={(e) =>
-                  e.target.value === "" || e.target.value === "0"
-                    ? null
-                    : updateQuantity(
-                        item._id,
-                        item.size,
-                        Number(e.target.value)
-                      )
-                }
+                onChange={(e) => {
+                  const value = Number(e.target.value);
+                  if (value >= 1) {
+                    updateQuantity(item._id, item.size, value);
+                  }
+                }}
                 className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1"
                 type="number"
                 min={1}
                 defaultValue={item.quantity}
               />
+
               <img
                 onClick={() => updateQuantity(item._id, item.size, 0)}
                 className="w-4 mr-4 sm:w-5 cursor-pointer"
                 src={assets.bin_icon}
-                alt=""
+                alt="Delete"
               />
             </div>
           );
