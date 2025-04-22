@@ -13,10 +13,10 @@ const deliveryCharge=10
 // const stripe=new Stripe(process.env.STRIPE_SECRET_KEY)
 
 //Razorpay
-// const razorpayInstance=new razorpay({
-//     key_id:process.env.RAZORPAY_KEY_ID,
-//     key_secret:process.env.RAZORPAY_KEY_SECRET,
-// })
+const razorpayInstance=new razorpay({
+    key_id:process.env.RAZORPAY_KEY_ID,
+    key_secret:process.env.RAZORPAY_KEY_SECRET,
+})
 
 
 

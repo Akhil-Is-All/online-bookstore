@@ -42,6 +42,7 @@ const PlaceOrder = () => {
       amount:order.amount,
       currency:order.currency,
       name:'Order Payment',
+      description:'Order Payment',
       order_id:order.id,
       receipt:order.receipt,
       handler:async(response)=>{
@@ -128,6 +129,8 @@ const PlaceOrder = () => {
           const responseRazorpay=await axios.post(backendUrl+'/api/order/razorpay',orderData,{headers:{token}})
           if (responseRazorpay.data.success) {
             initPay(responseRazorpay.data.order);
+            // console.log(responseRazorpay.data.order);
+            
             
           }
           break;
