@@ -48,7 +48,12 @@ import book47 from './book47.png';
 import book48 from './book48.png';
 import book49 from './book49.png';
 import book50 from './book50.png';
+import booksabout from './booksabout.png'
 import pic from './pic.png'
+import logo1 from './logo1.jpg'
+import logo2 from './logo2.jpg'
+import logoo from './logoo.png'
+import logoo2 from './logoo2.png'
 
 import logo from './logo.png';
 import hero from './hero.png'
@@ -90,7 +95,12 @@ export const assets = {
     cross_icon,
     exchange_icon,
     quality_icon,
-    pic
+    pic,
+    booksabout,
+    logo1,
+    logo2,
+    logoo,
+    logoo2
 }
 
 export const products = [
