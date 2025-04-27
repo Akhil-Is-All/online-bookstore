@@ -169,55 +169,28 @@ const placeOrderRazorpay=async (req,res)=>{
 
 }
 
-// const verifyRazorpay=async (req,res)=>{
-//     try {
-//         const {userId,razorpay_order_id}=req.body
-//         const orderInfo=await razorpayInstance.orders.fetch(razorpay_order_id)
-//         if (orderInfo.status==='paid') {
-//             await orderModel.findByIdAndUpdate(orderInfo.receipt,{payment:true});
-//             await userModel.findByIdAndUpdate(userId,{cartData:{}})
-//             res.json({success:true,message:"Payment successfull"})
-//         }
-//         else{
-//             await orderModel.findByIdAndDelete(orderInfo.receipt);
-//             res.json({success:false,message:'Payment failed'})
-//         }
-        
-//     } catch (error) {
-//         console.log(error);
-//         res.json({success:false,message:error.message})
-    
-//     }
-// }
-
-
-import crypto from "crypto";
-
-const verifyRazorpay = async (req, res) => {
+const verifyRazorpay=async (req,res)=>{
     try {
-        const { userId, razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
-
-        const sign = razorpay_order_id + "|" + razorpay_payment_id;
-        const expectedSign = crypto
-            .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET)
-            .update(sign.toString())
-            .digest("hex");
-
-        if (expectedSign === razorpay_signature) {
-            // Signature matched - payment is successful
-            await orderModel.findByIdAndUpdate(razorpay_order_id, { payment: true });
-            await userModel.findByIdAndUpdate(userId, { cartData: {} });
-            res.json({ success: true, message: "Payment successful" });
-        } else {
-            // Signature not matched - fake or failed payment
-            await orderModel.findByIdAndDelete(razorpay_order_id);
-            res.json({ success: false, message: "Payment verification failed, order deleted" });
+        const {userId,razorpay_order_id}=req.body
+        const orderInfo=await razorpayInstance.orders.fetch(razorpay_order_id)
+        if (orderInfo.status==='paid') {
+            await orderModel.findByIdAndUpdate(orderInfo.receipt,{payment:true});
+            await userModel.findByIdAndUpdate(userId,{cartData:{}})
+            res.json({success:true,message:"Payment successfull"})
         }
+        else{
+            await orderModel.findByIdAndDelete(orderInfo.receipt);
+            res.json({success:false,message:'Payment failed'})
+        }
+        
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: error.message });
+        res.json({success:false,message:error.message})
+    
     }
-};
+}
+
+
 
 
 // All orders data for admin panel
